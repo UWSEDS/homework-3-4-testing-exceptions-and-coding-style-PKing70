@@ -20,5 +20,5 @@ def read_dataframe():
     Returns:
         fire_df: A dataframe full of Seattle Real Time Fire 911 Call data.
     """
-    fire_df = pd.read_csv('Seattle_Real_Time_Fire_911_Calls.csv', delimiter=',')
+    fire_df = pd.read_csv('../data/Seattle_Real_Time_Fire_911_Calls.csv', delimiter=',')
     return fire_df

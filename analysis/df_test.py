@@ -20,7 +20,7 @@ def test_create_dataframe(data, columns, types, rows_allowed):
     and row count constraints.
 
     Args:
-        data (pandas.dataframe): Data loaded from a publicdata source (911 CSV
+        data (pandas.dataframe): Data loaded from a public data source (911 CSV
         from data.seattle.gov, in this case).
 
         columns(list): The header columns expected from the given data.
@@ -42,6 +42,5 @@ def test_create_dataframe(data, columns, types, rows_allowed):
         passed = sorted(data.dtypes.tolist()) == sorted(types)
     else:
         raise ValueError("DataFrame contains unexpected columns.")
-    if passed:
-        passed = data.shape[0] >= rows_allowed
+    passed = data.shape[0] >= rows_allowed
     return passed

@@ -22,12 +22,12 @@ def read_dataframpe():
         fire_df: A dataframe full of Seattle Real Time Fire 911 Call data, or None
         if the tests aren't passed.
     """
-    fire_df = pd.read_csv('Seattle_Real_Time_Fire_911_Calls.csv', delimiter=',')
+    fire_df = pd.read_csv('../data/Seattle_Real_Time_Fire_911_Calls.csv', delimiter=',')
     column_names = fire_df.columns.values.tolist()
     column_types = fire_df.dtypes.tolist()
     max_row_count = 10
 
-    #column_names.pop() #Uncomment this line to throw exception
+    column_names.pop() #Uncomment this line to throw exception
 
     if test_create_dataframe(fire_df, column_names, column_types, max_row_count):
         return fire_df
