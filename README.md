@@ -44,8 +44,8 @@ In this homework, you will create two python modules and put them in PEP8 style.
 1. Clone this repo to your local working directory
 2. From /analysis:
 
-'dataframe.py' contains a function to read the data from homework 2
-'dataframpe.py' contains a function to generate a ValueError exception if the dataframe doesn't have the expected columns
+``dataframe.py`` contains a function to read the data from homework 2
+``dataframpe.py`` contains a function to generate a ValueError exception if the dataframe doesn't have the expected columns
 
 #### Dataframe.py (Question 1)
 
@@ -54,11 +54,11 @@ In this homework, you will create two python modules and put them in PEP8 style.
 ```bash
 $ python
 ```
-2. From the Python command prompt, import dataframe.py:
+2. From the Python command prompt, import ``dataframe.py``:
 ```python
 >>> import dataframe as hwdf
 ```
-3. From the Python command prompt, call read_dataframe():
+3. From the Python command prompt, call ``read_dataframe()``:
 ```python
 >>> hwdf.read_dataframe()
 ```
@@ -75,18 +75,18 @@ $ python
 
 #### Dataframpe.py (Question 1)
 
-Note that dataframpe.py imports and calls test_create_dataframe from df_test.py. You don't need to call test_create_dataframe() outside of dataframpe.py.
+Note that ``dataframpe.py`` imports and calls ``test_create_dataframe()`` from ``df_test.py``. You don't need to call ``test_create_dataframe()`` outside of ``dataframpe.py``.
 
-1. From /analysis, enter python:
+1. From ``/analysis``, enter python:
 
 ```bash
 $ python
 ```
-2. From the Python command prompt, import dataframpe.py:
+2. From the Python command prompt, import ``dataframpe.py``:
 ```python
 >>> import dataframpe as hwdfp
 ```
-3. From the Python command prompt, call read_dataframe():
+3. From the Python command prompt, call ``read_dataframe()``:
 ```python
 >>> hwdf.read_dataframpe()
 ```
@@ -104,7 +104,7 @@ $ python
 8                             2615 Sw Barton St              Medic Response       ...         (47.521023, -122.366095)       F110104158
 9                               2028 Ne 65th St                Aid Response       ...         (47.675778, -122.305907)       F110104156...
 ```
-5. To see the requested ValueError, go to line 30 of dataframpe.py and remove the comment so that it executes. 
+5. To see the requested ValueError, go to line 30 of ``dataframpe.py`` and remove the comment so that it executes. 
 ```python
 ...
 column_names.pop() #Uncomment this line to throw exception
@@ -126,7 +126,7 @@ ValueError: DataFrame contains unexpected columns.
 
 #### Test_dataframe.py (Question 1)
 
-Note that Test_dataframe.py imports the unittest module and also calls read_dataframe() from dataframe.py. You don't need to call read_dataframe() outside of Test_dataframpe.py.
+Note that ``test_dataframe.py`` imports the ``unittest`` module and also imports ``read_dataframe()`` from ``dataframe.py``. You don't need to call ``read_dataframe()`` outside of ``test_dataframpe.py``.
 
 1. From /analysis, from the command line, enter:
 
