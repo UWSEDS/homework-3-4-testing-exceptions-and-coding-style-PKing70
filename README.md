@@ -2,7 +2,10 @@
 
 See revisions based on initial grading, below.
 
-##### Grade: 11/14   
+##### Final grade: 14/14  
+
+
+Grade: 11/14   
 
 -1: df_test.py - line #45, if statement is redundant.    
 
